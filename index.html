@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IBPS PO & Clerk – Ultimate Roadmap 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Rajdhani:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --gold:#F5C842;--gold2:#E8A820;--gold3:#FDE68A;
+  --navy:#0A0E2A;--navy2:#0F1535;--navy3:#151C40;
+  --blue:#1E3A8A;--blue2:#2563EB;
+  --green:#10B981;--red:#EF4444;--purple:#8B5CF6;
+  --text:#E2E8F0;--text2:#94A3B8;--text3:#CBD5E1;
+  --card:#141A3A;--card2:#1A2147;
+  --border:rgba(245,200,66,0.2);
+}
+body{font-family:'DM Sans',sans-serif;background:var(--navy);color:var(--text);overflow-x:hidden}
+
+/* HEADER */
+.hero{
+  background:linear-gradient(135deg,#020617 0%,#0A0E2A 40%,#0F1535 70%,#0A0E2A 100%);
+  padding:60px 20px 50px;text-align:center;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;top:-200px;left:50%;transform:translateX(-50%);
+  width:700px;height:700px;border-radius:50%;
+  background:radial-gradient(circle,rgba(245,200,66,0.08) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-badge{
+  display:inline-block;background:rgba(245,200,66,0.1);border:1px solid var(--border);
+  color:var(--gold);padding:6px 18px;border-radius:50px;font-size:12px;
+  letter-spacing:2px;text-transform:uppercase;font-family:'Rajdhani',sans-serif;
+  font-weight:600;margin-bottom:20px;
+}
+.hero h1{
+  font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,4.2rem);
+  font-weight:900;line-height:1.1;margin-bottom:12px;
+  background:linear-gradient(135deg,#FDE68A,#F5C842,#E8A820,#FCD34D);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero h2{
+  font-family:'Rajdhani',sans-serif;font-size:clamp(1rem,3vw,1.6rem);
+  color:var(--text2);font-weight:500;letter-spacing:1px;margin-bottom:30px;
+}
+.stats-row{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:36px;
+}
+.stat-pill{
+  background:rgba(245,200,66,0.07);border:1px solid var(--border);
+  border-radius:50px;padding:10px 22px;
+  font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--gold3);
+  display:flex;align-items:center;gap:8px;
+}
+.stat-pill span{font-size:20px;font-weight:700;color:var(--gold);}
+
+/* MOTIVATIONAL */
+.motto-bar{
+  background:linear-gradient(90deg,var(--blue),#1E40AF,var(--blue));
+  padding:22px 40px;text-align:center;position:relative;overflow:hidden;
+}
+.motto-bar::before{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(90deg,transparent,transparent 80px,rgba(255,255,255,0.03) 80px,rgba(255,255,255,0.03) 81px);
+}
+.motto-bar p{
+  font-family:'Playfair Display',serif;font-size:clamp(1rem,2.5vw,1.4rem);
+  color:#FDE68A;font-style:italic;position:relative;
+}
+.motto-bar small{display:block;margin-top:6px;font-family:'DM Sans';font-size:12px;color:rgba(255,255,255,0.5);font-style:normal;}
+
+/* SECTIONS */
+.section{padding:50px 20px;max-width:1100px;margin:0 auto;}
+.section-title{
+  font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.4rem);
+  color:var(--gold);margin-bottom:8px;
+}
+.section-sub{color:var(--text2);font-size:14px;margin-bottom:36px;letter-spacing:.5px;}
+
+/* SALARY CARDS */
+.salary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-bottom:16px;}
+.salary-card{
+  background:var(--card);border:1px solid var(--border);border-radius:16px;
+  padding:24px 20px;position:relative;overflow:hidden;transition:transform .2s;
+}
+.salary-card:hover{transform:translateY(-4px);}
+.salary-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2));
+}
+.salary-card .role{font-family:'Rajdhani',sans-serif;font-size:11px;letter-spacing:2px;color:var(--text2);text-transform:uppercase;margin-bottom:8px;}
+.salary-card .amount{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold);font-weight:700;}
+.salary-card .amount span{font-size:13px;color:var(--text2);font-family:'DM Sans';}
+.salary-card p{font-size:12px;color:var(--text2);margin-top:8px;line-height:1.5;}
+.tag{display:inline-block;padding:3px 10px;border-radius:50px;font-size:11px;margin-top:8px;margin-right:4px;font-weight:500;}
+.tag-green{background:rgba(16,185,129,0.12);color:#34D399;border:1px solid rgba(16,185,129,0.2);}
+.tag-blue{background:rgba(37,99,235,0.12);color:#60A5FA;border:1px solid rgba(37,99,235,0.2);}
+.tag-gold{background:rgba(245,200,66,0.1);color:var(--gold);border:1px solid var(--border);}
+
+/* SUBJECT CARDS */
+.subject-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;}
+.subject-card{
+  background:var(--card);border:1px solid rgba(255,255,255,0.06);
+  border-radius:20px;padding:28px;position:relative;overflow:hidden;
+  transition:transform .3s,box-shadow .3s;
+}
+.subject-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+.subject-card .accent{position:absolute;top:0;left:0;right:0;height:4px;}
+.subject-card .teacher-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);
+  border-radius:50px;padding:6px 14px;margin-bottom:16px;font-size:12px;color:var(--text3);
+}
+.subject-card h3{font-family:'Rajdhani',sans-serif;font-size:1.4rem;font-weight:700;margin-bottom:4px;}
+.subject-card .subject-desc{font-size:12px;color:var(--text2);margin-bottom:18px;line-height:1.5;}
+.chapter-list{list-style:none;}
+.chapter-list li{
+  display:flex;align-items:flex-start;gap:10px;
+  padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);
+  font-size:13px;line-height:1.4;
+}
+.chapter-list li:last-child{border-bottom:none;}
+.ch-num{
+  min-width:22px;height:22px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;font-weight:700;flex-shrink:0;margin-top:1px;
+  font-family:'Rajdhani',sans-serif;
+}
+.ch-name{color:var(--text3);}
+.ch-name strong{color:var(--text);display:block;font-size:13px;}
+.ch-name em{font-style:normal;font-size:11px;color:var(--text2);}
+.priority-badge{
+  display:inline-block;padding:2px 8px;border-radius:50px;font-size:10px;
+  font-weight:600;font-family:'Rajdhani',sans-serif;letter-spacing:.5px;flex-shrink:0;
+}
+
+/* MATH - orange */
+.math .accent{background:linear-gradient(90deg,#F97316,#FB923C);}
+.math h3{color:#FB923C;}
+.math .ch-num{background:rgba(249,115,22,0.15);color:#FB923C;}
+.math .priority-badge.high{background:rgba(249,115,22,0.15);color:#FB923C;}
+.math .priority-badge.med{background:rgba(249,115,22,0.07);color:#FDBA74;}
+
+/* REASONING - purple */
+.reasoning .accent{background:linear-gradient(90deg,#8B5CF6,#A78BFA);}
+.reasoning h3{color:#A78BFA;}
+.reasoning .ch-num{background:rgba(139,92,246,0.15);color:#A78BFA;}
+.reasoning .priority-badge.high{background:rgba(139,92,246,0.15);color:#A78BFA;}
+.reasoning .priority-badge.med{background:rgba(139,92,246,0.07);color:#C4B5FD;}
+
+/* ENGLISH - teal */
+.english .accent{background:linear-gradient(90deg,#14B8A6,#2DD4BF);}
+.english h3{color:#2DD4BF;}
+.english .ch-num{background:rgba(20,184,166,0.15);color:#2DD4BF;}
+.english .priority-badge.high{background:rgba(20,184,166,0.15);color:#2DD4BF;}
+.english .priority-badge.med{background:rgba(20,184,166,0.07);color:#99F6E4;}
+
+/* BANKING - blue */
+.banking .accent{background:linear-gradient(90deg,#2563EB,#60A5FA);}
+.banking h3{color:#60A5FA;}
+.banking .ch-num{background:rgba(37,99,235,0.15);color:#60A5FA;}
+.banking .priority-badge.high{background:rgba(37,99,235,0.15);color:#60A5FA;}
+.banking .priority-badge.med{background:rgba(37,99,235,0.07);color:#93C5FD;}
+
+/* CURRENT - green */
+.current .accent{background:linear-gradient(90deg,#10B981,#34D399);}
+.current h3{color:#34D399;}
+.current .ch-num{background:rgba(16,185,129,0.15);color:#34D399;}
+.current .priority-badge.high{background:rgba(16,185,129,0.15);color:#34D399;}
+.current .priority-badge.med{background:rgba(16,185,129,0.07);color:#6EE7B7;}
+
+/* TIMETABLE */
+.timetable{background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden;}
+.tt-header{
+  background:linear-gradient(135deg,#0F1535,#1a2060);
+  padding:20px 28px;display:flex;align-items:center;gap:14px;
+}
+.tt-header h3{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;color:var(--gold);}
+.tt-slot{display:flex;align-items:stretch;border-bottom:1px solid rgba(255,255,255,0.04);}
+.tt-slot:last-child{border-bottom:none;}
+.tt-time{
+  min-width:120px;padding:14px 20px;font-family:'Rajdhani',sans-serif;
+  font-size:13px;font-weight:600;color:var(--gold);background:rgba(245,200,66,0.04);
+  border-right:1px solid rgba(245,200,66,0.1);display:flex;align-items:center;
+}
+.tt-activity{padding:14px 20px;font-size:13px;flex:1;}
+.tt-activity strong{color:var(--text);display:block;margin-bottom:2px;}
+.tt-activity span{color:var(--text2);font-size:12px;}
+.tt-subject{
+  min-width:80px;padding:14px 16px;display:flex;align-items:center;justify-content:center;
+  font-family:'Rajdhani',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;
+  border-left:1px solid rgba(255,255,255,0.04);
+}
+
+/* ROADMAP TIMELINE */
+.timeline{position:relative;padding:10px 0;}
+.timeline::before{
+  content:'';position:absolute;left:24px;top:0;bottom:0;width:2px;
+  background:linear-gradient(to bottom,var(--gold),transparent);
+}
+.tl-item{display:flex;gap:20px;margin-bottom:32px;position:relative;}
+.tl-dot{
+  width:48px;height:48px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  border:2px solid var(--gold);background:var(--navy2);
+  font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--gold);
+  z-index:1;
+}
+.tl-content{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:20px 24px;flex:1;}
+.tl-content h4{font-family:'Rajdhani',sans-serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:4px;}
+.tl-content .period{font-size:11px;color:var(--text2);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;}
+.tl-content ul{padding-left:16px;font-size:13px;color:var(--text3);line-height:1.8;}
+
+/* STRATEGY GRID */
+.strategy-box{
+  background:var(--card2);border:1px solid rgba(255,255,255,0.06);
+  border-radius:14px;padding:22px;margin-bottom:16px;
+}
+.strategy-box h4{font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;color:var(--gold3);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.strategy-box p,.strategy-box li{font-size:13px;color:var(--text2);line-height:1.7;}
+.strategy-box ul{padding-left:16px;}
+.two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;}
+
+/* EXAM PATTERN */
+.exam-table{width:100%;border-collapse:collapse;font-size:13px;}
+.exam-table th{
+  background:rgba(245,200,66,0.08);color:var(--gold);
+  font-family:'Rajdhani',sans-serif;font-size:12px;letter-spacing:1px;
+  text-transform:uppercase;padding:12px 16px;text-align:left;
+  border-bottom:1px solid var(--border);
+}
+.exam-table td{padding:11px 16px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--text3);}
+.exam-table tr:last-child td{border-bottom:none;}
+.exam-table tr:hover td{background:rgba(255,255,255,0.02);}
+
+/* FOOTER */
+footer{
+  text-align:center;padding:40px 20px;
+  background:linear-gradient(to top,#020617,var(--navy));
+  font-size:12px;color:var(--text2);border-top:1px solid var(--border);
+}
+footer .quote{
+  font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--gold3);
+  margin-bottom:12px;font-style:italic;
+}
+
+/* SCROLL ANIMATION */
+.fade-in{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
+.fade-in.visible{opacity:1;transform:translateY(0);}
+
+/* DIVIDER */
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:0 auto;max-width:1100px;}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">🏦 Government Banking Job — Complete Blueprint</div>
+  <h1>IBPS PO & Clerk</h1>
+  <h2>Ultimate Preparation Roadmap 2025–26</h2>
+  <p style="font-size:14px;color:var(--text2);max-width:560px;margin:0 auto;">Syllabus • Strategy • Schedule • Teachers • Motivation — Sab Ek Jagah</p>
+  <div class="stats-row">
+    <div class="stat-pill">🎯 <span>2</span> Exams Covered</div>
+    <div class="stat-pill">📚 <span>5</span> Subjects</div>
+    <div class="stat-pill">⏰ <span>10 Hr</span>/Day Plan</div>
+    <div class="stat-pill">👨‍🏫 <span>5</span> Best Teachers</div>
+    <div class="stat-pill">💰 <span>₹52K+</span> Starting Salary</div>
+  </div>
+</div>
+
+<!-- MOTTO -->
+<div class="motto-bar">
+  <p>"जो आज मेहनत करता है, कल उसकी ही सुनी जाती है।"</p>
+  <small>Your sacrifices today are your salary slips tomorrow — Bank Officer बनना है तो रुकना नहीं।</small>
+</div>
+
+<!-- EXAM OVERVIEW -->
+<div class="section fade-in">
+  <div class="section-title">Exam Pattern Overview</div>
+  <div class="section-sub">IBPS PO (Prelims + Mains + Interview) &nbsp;|&nbsp; IBPS Clerk (Prelims + Mains)</div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px;">
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;">
+      <div style="background:rgba(245,200,66,0.08);padding:14px 20px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.1rem;color:var(--gold);">📋 IBPS PO — Prelims</div>
+      <table class="exam-table">
+        <tr><th>Subject</th><th>Qs</th><th>Marks</th><th>Time</th></tr>
+        <tr><td>English Language</td><td>30</td><td>30</td><td>20 min</td></tr>
+        <tr><td>Quantitative Aptitude</td><td>35</td><td>35</td><td>20 min</td></tr>
+        <tr><td>Reasoning Ability</td><td>35</td><td>35</td><td>20 min</td></tr>
+        <tr><td style="color:var(--gold);font-weight:600;">Total</td><td style="color:var(--gold);">100</td><td style="color:var(--gold);">100</td><td style="color:var(--gold);">60 min</td></tr>
+      </table>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;">
+      <div style="background:rgba(245,200,66,0.08);padding:14px 20px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.1rem;color:var(--gold);">📋 IBPS PO — Mains</div>
+      <table class="exam-table">
+        <tr><th>Subject</th><th>Qs</th><th>Marks</th><th>Time</th></tr>
+        <tr><td>Reasoning + Computer</td><td>45</td><td>60</td><td>60 min</td></tr>
+        <tr><td>Data Analysis</td><td>35</td><td>60</td><td>45 min</td></tr>
+        <tr><td>General, Economy, Banking</td><td>40</td><td>40</td><td>35 min</td></tr>
+        <tr><td>English Language</td><td>35</td><td>40</td><td>40 min</td></tr>
+        <tr><td style="color:var(--gold);font-weight:600;">Total</td><td style="color:var(--gold);">155</td><td style="color:var(--gold);">200</td><td style="color:var(--gold);">3 hr</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Negative Marking Warning -->
+  <div style="margin-top:16px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.2);border-radius:12px;padding:14px 20px;font-size:13px;color:#FCA5A5;display:flex;gap:10px;align-items:flex-start;">
+    <span style="font-size:18px;">⚠️</span>
+    <div><strong style="color:#EF4444;">Negative Marking:</strong> Har galat jawab ke liye 0.25 marks kate jaate hain. Guess mat karo — agar 60% se kam confident ho, skip karo.</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SALARY -->
+<div class="section fade-in">
+  <div class="section-title">💰 Salary & Benefits</div>
+  <div class="section-sub">Sarkari naukri ki taaqat — Paise + Security + Respect</div>
+  <div class="salary-grid">
+    <div class="salary-card">
+      <div class="role">IBPS PO (Scale-I Officer)</div>
+      <div class="amount">₹52,000 <span>/month</span></div>
+      <p>Basic pay ₹36,000 + DA + HRA + CCA. After 5 saal Scale-II promotion possible.</p>
+      <div><span class="tag tag-green">Pension</span><span class="tag tag-blue">Medical</span><span class="tag tag-gold">Promotion</span></div>
+    </div>
+    <div class="salary-card">
+      <div class="role">IBPS Clerk</div>
+      <div class="amount">₹29,000 <span>/month</span></div>
+      <p>Basic pay ₹19,900 + DA + HRA. Internal exam se Officer ban sakte ho.</p>
+      <div><span class="tag tag-green">Job Security</span><span class="tag tag-blue">Loan Benefits</span></div>
+    </div>
+    <div class="salary-card">
+      <div class="role">10 Year After (PO)</div>
+      <div class="amount">₹90,000+ <span>/month</span></div>
+      <p>Scale-II ya III level par. Branch Manager ya Regional Head banne ka mauka.</p>
+      <div><span class="tag tag-gold">Leadership</span><span class="tag tag-green">Perks</span></div>
+    </div>
+    <div class="salary-card">
+      <div class="role">Extra Benefits</div>
+      <div class="amount" style="font-size:1.4rem;">🎁 Perks</div>
+      <p>Travel Allowance, LFC, Staff Loans at low interest, Gratuity, PF, Housing Loan subsidy.</p>
+      <div><span class="tag tag-blue">Respected Job</span><span class="tag tag-gold">Stable Life</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SUBJECTS -->
+<div class="section fade-in">
+  <div class="section-title">📚 Subject-wise Chapter Roadmap</div>
+  <div class="section-sub">Har subject ke liye best teacher + priority chapters + strategy</div>
+  <div class="subject-grid">
+
+    <!-- MATH -->
+    <div class="subject-card math">
+      <div class="accent"></div>
+      <div class="teacher-tag">🧮 <strong style="color:#FB923C;">Aashish Sir</strong> &nbsp;· Quantitative Aptitude</div>
+      <h3>Mathematics / Quant</h3>
+      <p class="subject-desc">Ek ek topic master karo. Shortcut se sirf tab kaam chalega jab concept clear ho.</p>
+      <ul class="chapter-list">
+        <li><div class="ch-num">1</div><div class="ch-name"><strong>Number System & Simplification</strong><em>BODMAS, fractions, decimals — base hai sab ka</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">2</div><div class="ch-name"><strong>Percentage & Profit-Loss</strong><em>Har jagah aata hai — DI + Word problems dono mein</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">3</div><div class="ch-name"><strong>Ratio, Proportion & Average</strong><em>Speed se solve karna seekho</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">4</div><div class="ch-name"><strong>Time, Speed & Distance</strong><em>Trains, Boats, Relative speed — practice karo</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">5</div><div class="ch-name"><strong>Time & Work + Pipes</strong><em>Shortcut se 30 sec mein solve — Aashish Sir trick</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">6</div><div class="ch-name"><strong>Simple & Compound Interest</strong><em>Banking paper mein directly aata hai</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">7</div><div class="ch-name"><strong>Data Interpretation (DI)</strong><em>Bar/Pie/Table/Line — Mains ka king topic</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">8</div><div class="ch-name"><strong>Quadratic Equations</strong><em>5 questions guaranteed — seedha 5 marks</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">9</div><div class="ch-name"><strong>Number Series</strong><em>Pattern recognize karo — 5 min mein 5 marks</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">10</div><div class="ch-name"><strong>Permutation, Combination & Probability</strong><em>Mains ke liye — deep practice chahiye</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">11</div><div class="ch-name"><strong>Mensuration & Geometry</strong><em>Formulas yaad karo + apply karo</em></div><span class="priority-badge med">✔ MED</span></li>
+        <li><div class="ch-num">12</div><div class="ch-name"><strong>Mixture & Alligation</strong><em>Banking context — mix karna aata hai</em></div><span class="priority-badge med">✔ MED</span></li>
+      </ul>
+    </div>
+
+    <!-- REASONING -->
+    <div class="subject-card reasoning">
+      <div class="accent"></div>
+      <div class="teacher-tag">🧠 <strong style="color:#A78BFA;">Ankush Sir</strong> &nbsp;· Reasoning Ability</div>
+      <h3>Reasoning Ability</h3>
+      <p class="subject-desc">Logic aur pattern — Ankush Sir ke saath ek ek topic crystal clear ho jayega.</p>
+      <ul class="chapter-list">
+        <li><div class="ch-num">1</div><div class="ch-name"><strong>Puzzles & Seating Arrangement</strong><em>IBPS ka king topic — 15-20 qs prelims + mains</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">2</div><div class="ch-name"><strong>Syllogism</strong><em>Conclusion-based — Ankush Sir ke tips se easy</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">3</div><div class="ch-name"><strong>Inequalities</strong><em>5 qs in 2 min possible agar practice ho</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">4</div><div class="ch-name"><strong>Blood Relations</strong><em>Family tree diagrams — visual approach best</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">5</div><div class="ch-name"><strong>Direction Sense</strong><em>Diagram banao — galti nahi hogi</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">6</div><div class="ch-name"><strong>Coding-Decoding</strong><em>Pattern based — new format bhi practice karo</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">7</div><div class="ch-name"><strong>Alphanumeric Series</strong><em>2-3 min practice daily — auto ho jayega</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">8</div><div class="ch-name"><strong>Order & Ranking</strong><em>Quick solve — 1 min per question</em></div><span class="priority-badge med">✔ MED</span></li>
+        <li><div class="ch-num">9</div><div class="ch-name"><strong>Machine Input-Output</strong><em>Mains mein aata hai — pattern dekhna seekho</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">10</div><div class="ch-name"><strong>Critical Reasoning</strong><em>Mains ke liye — Assumption, Inference, Argument</em></div><span class="priority-badge med">✔ MED</span></li>
+        <li><div class="ch-num">11</div><div class="ch-name"><strong>Data Sufficiency</strong><em>Mains — 2 statements se conclusion nikaalo</em></div><span class="priority-badge med">✔ MED</span></li>
+      </ul>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="subject-card english">
+      <div class="accent"></div>
+      <div class="teacher-tag">📖 <strong style="color:#2DD4BF;">Nimisha Ma'am</strong> &nbsp;· English Language</div>
+      <h3>English Language</h3>
+      <p class="subject-desc">English se daro mat — Nimisha Ma'am ki approach se sirf 45 din mein strong ho sakta hai.</p>
+      <ul class="chapter-list">
+        <li><div class="ch-num">1</div><div class="ch-name"><strong>Reading Comprehension (RC)</strong><em>Prelims mein 10 qs, Mains mein 15+ — top priority</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">2</div><div class="ch-name"><strong>Cloze Test</strong><em>Vocab + Grammar combo — roz practice karo</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">3</div><div class="ch-name"><strong>Error Detection / Spotting</strong><em>Grammar rules yaad karo + apply karo</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">4</div><div class="ch-name"><strong>Para Jumbles</strong><em>Connector words dhundho — FANBOYS trick</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">5</div><div class="ch-name"><strong>Fill in the Blanks</strong><em>Prepositions + Conjunctions + Vocabulary</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">6</div><div class="ch-name"><strong>Vocabulary (Synonyms/Antonyms)</strong><em>Roz 10 words — 3 months mein 900 words</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">7</div><div class="ch-name"><strong>Sentence Correction</strong><em>Grammar base — Subject-Verb Agreement + Tenses</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">8</div><div class="ch-name"><strong>Word Replacement</strong><em>Context reading — new pattern</em></div><span class="priority-badge med">✔ MED</span></li>
+        <li><div class="ch-num">9</div><div class="ch-name"><strong>Descriptive Writing (Mains)</strong><em>Essay + Letter — Practice 3 topics per week</em></div><span class="priority-badge high">⭐ MAINS</span></li>
+        <li><div class="ch-num">10</div><div class="ch-name"><strong>Idioms & Phrases</strong><em>RC mein helpful — top 200 list study karo</em></div><span class="priority-badge med">✔ MED</span></li>
+      </ul>
+    </div>
+
+    <!-- BANKING AWARENESS -->
+    <div class="subject-card banking">
+      <div class="accent"></div>
+      <div class="teacher-tag">🏦 <strong style="color:#60A5FA;">Dr. Gaurav Garg</strong> &nbsp;· Banking Awareness</div>
+      <h3>Banking Awareness</h3>
+      <p class="subject-desc">Yeh subject sirf Mains mein aata hai lekin yahan highest cut-off hota hai — ignore mat karo.</p>
+      <ul class="chapter-list">
+        <li><div class="ch-num">1</div><div class="ch-name"><strong>Banking System in India</strong><em>RBI, Commercial Banks, NABARD, SIDBI, NHB</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">2</div><div class="ch-name"><strong>RBI & Its Functions</strong><em>Monetary policy, CRR, SLR, Repo, Reverse Repo</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">3</div><div class="ch-name"><strong>Banking Acts & Regulations</strong><em>Banking Regulation Act 1949, FEMA, PMLA</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">4</div><div class="ch-name"><strong>Financial Institutions</strong><em>SEBI, IRDA, PFRDA, EXIM Bank</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">5</div><div class="ch-name"><strong>Government Schemes</strong><em>PM Mudra, Jan Dhan, Kisan Credit Card, PMSBY</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">6</div><div class="ch-name"><strong>Indian Economy Basics</strong><em>GDP, Inflation, Budget terms, Fiscal policy</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">7</div><div class="ch-name"><strong>Payment Systems & Fintech</strong><em>UPI, RTGS, NEFT, IMPS, NACH, e-RUPI</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">8</div><div class="ch-name"><strong>NPA & Basel Norms</strong><em>NPA, Provisioning, SARFAESI, Basel-III</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">9</div><div class="ch-name"><strong>International Finance</strong><em>IMF, World Bank, ADB, AIIB, SWIFT</em></div><span class="priority-badge med">✔ MED</span></li>
+        <li><div class="ch-num">10</div><div class="ch-name"><strong>Capital Markets</strong><em>Shares, Bonds, Mutual Funds, Demat</em></div><span class="priority-badge med">✔ MED</span></li>
+      </ul>
+    </div>
+
+    <!-- CURRENT AFFAIRS -->
+    <div class="subject-card current">
+      <div class="accent"></div>
+      <div class="teacher-tag">📰 <strong style="color:#34D399;">Khush Sir</strong> &nbsp;· Current Affairs & GK</div>
+      <h3>Current Affairs & GK</h3>
+      <p class="subject-desc">Roz padhna hai — ek din bhi chhoda toh backlog bahut bada ho jaata hai.</p>
+      <ul class="chapter-list">
+        <li><div class="ch-num">1</div><div class="ch-name"><strong>Monthly Current Affairs</strong><em>Khush Sir ki monthly PDF + video — daily dekhna hai</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">2</div><div class="ch-name"><strong>National Events & Appointments</strong><em>Governors, Ministers, CEOs, UN posts</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">3</div><div class="ch-name"><strong>Banking & Economy News</strong><em>RBI decisions, inflation data, budget highlights</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">4</div><div class="ch-name"><strong>Sports Awards & Days</strong><em>Important international awards + national sports</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">5</div><div class="ch-name"><strong>Static GK</strong><em>Countries, Capitals, HQ of banks + Institutions</em></div><span class="priority-badge high">⭐ MUST</span></li>
+        <li><div class="ch-num">6</div><div class="ch-name"><strong>International Events</strong><em>Summits, Agreements, G20, UN resolutions</em></div><span class="priority-badge med">✔ HIGH</span></li>
+        <li><div class="ch-num">7</div><div class="ch-name"><strong>Defence & Science</strong><em>Missiles, Satellites, ISRO missions, Defence deals</em></div><span class="priority-badge med">✔ MED</span></li>
+        <li><div class="ch-num">8</div><div class="ch-name"><strong>Books, Authors & Obituaries</strong><em>Recently published books — 2-3 qs guaranteed</em></div><span class="priority-badge med">✔ MED</span></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- DAILY TIMETABLE -->
+<div class="section fade-in">
+  <div class="section-title">⏰ Daily 10-Hour Power Schedule</div>
+  <div class="section-sub">Discipline = Dream. Yeh routine follow karo — result guaranteed.</div>
+  <div class="timetable">
+    <div class="tt-header">
+      <span style="font-size:24px;">📅</span>
+      <div>
+        <h3>Daily Study Plan — 10 Hours</h3>
+        <p style="font-size:12px;color:var(--text2);margin-top:2px;">Weekdays + Weekend (same routine, Sunday thoda relaxed)</p>
+      </div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">5:00 – 5:30</div>
+      <div class="tt-activity"><strong>Wake Up + Warm Up</strong><span>Fresh air, light exercise, chai — brain ko signal do ki kaam shuru hai</span></div>
+      <div class="tt-subject" style="color:#F97316;">🌅</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">5:30 – 7:30</div>
+      <div class="tt-activity"><strong>Mathematics — Aashish Sir</strong><span>2 topics per session: theory 30 min → 30 qs practice → revision</span></div>
+      <div class="tt-subject" style="color:#F97316;">MATH</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">7:30 – 8:00</div>
+      <div class="tt-activity"><strong>Breakfast + Break</strong><span>Poha, dalia ya kuch healthy. Phone se door raho is waqt.</span></div>
+      <div class="tt-subject">🍽️</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">8:00 – 10:00</div>
+      <div class="tt-activity"><strong>Reasoning — Ankush Sir</strong><span>Puzzle: 45 min deep focus → Coding/Syllogism: 30 min → 25 qs mock</span></div>
+      <div class="tt-subject" style="color:#A78BFA;">REAS.</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">10:00 – 10:15</div>
+      <div class="tt-activity"><strong>Short Break</strong><span>Eyes rest, stretch — Pomodoro technique</span></div>
+      <div class="tt-subject">🔄</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">10:15 – 12:00</div>
+      <div class="tt-activity"><strong>English — Nimisha Ma'am</strong><span>RC: 1 passage → Grammar topic: 30 min → 10 new vocab words + revision</span></div>
+      <div class="tt-subject" style="color:#2DD4BF;">ENG.</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">12:00 – 1:30</div>
+      <div class="tt-activity"><strong>Lunch + Rest</strong><span>Khana khao, 20-25 min power nap okay hai — usse zyada nahi</span></div>
+      <div class="tt-subject">😴</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">1:30 – 3:30</div>
+      <div class="tt-activity"><strong>Banking Awareness — Dr. Gaurav Garg</strong><span>1 topic theory → Notes banana → 20 MCQs practice</span></div>
+      <div class="tt-subject" style="color:#60A5FA;">BANK.</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">3:30 – 4:00</div>
+      <div class="tt-activity"><strong>Current Affairs — Khush Sir</strong><span>Daily news video dekhna + 10 new facts notebook mein likhna</span></div>
+      <div class="tt-subject" style="color:#34D399;">CA</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">4:00 – 4:30</div>
+      <div class="tt-activity"><strong>Tea Break + Walk</strong><span>Baahar jao, fresh air lo — stress release</span></div>
+      <div class="tt-subject">🚶</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">4:30 – 6:30</div>
+      <div class="tt-activity"><strong>Full Mock Test / Previous Year Papers</strong><span>Week mein 4 din mock, 3 din error analysis — galtiyon se seekho</span></div>
+      <div class="tt-subject" style="color:var(--gold);">MOCK</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">6:30 – 7:30</div>
+      <div class="tt-activity"><strong>Dinner + Family Time</strong><span>Screen se door raho, mental rest zaruri hai</span></div>
+      <div class="tt-subject">🏠</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">7:30 – 9:00</div>
+      <div class="tt-activity"><strong>Revision + Notes + Weak Areas</strong><span>Aaj jo pada uski quick revision + notebook update</span></div>
+      <div class="tt-subject" style="color:var(--gold);">REV.</div>
+    </div>
+    <div class="tt-slot">
+      <div class="tt-time">9:00 – 9:30</div>
+      <div class="tt-activity"><strong>Vocabulary + CA Quick Read</strong><span>10 words + kal ka plan banao — ready ho jao</span></div>
+      <div class="tt-subject" style="color:#34D399;">📖</div>
+    </div>
+    <div class="tt-slot" style="background:rgba(245,200,66,0.03);">
+      <div class="tt-time" style="color:var(--gold2);">9:30 PM</div>
+      <div class="tt-activity"><strong>Lights Out — Sleep by 10 PM</strong><span>7-8 ghante ki neend = better memory + focus. Sleep = preparation!</span></div>
+      <div class="tt-subject">🌙</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- PHASE ROADMAP -->
+<div class="section fade-in">
+  <div class="section-title">🗺️ Phase-wise Study Roadmap</div>
+  <div class="section-sub">Exam tak ka poora journey — Phase by phase plan karo</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot">1</div>
+      <div class="tl-content">
+        <h4>Phase 1 — Foundation Building</h4>
+        <div class="period">Month 1–2 · 60 Days</div>
+        <ul>
+          <li>Sabse pehle apna syllabus print karo aur wall par lagao</li>
+          <li>Aashish Sir se Number System, % , Ratio se shuru karo</li>
+          <li>Ankush Sir se Puzzles basics + Syllogism shuru karo</li>
+          <li>Nimisha Ma'am se RC techniques + Grammar rules</li>
+          <li>Dr. Gaurav Garg se Banking System basics + RBI</li>
+          <li>Khush Sir ka daily CA — roz 30 min minimum</li>
+          <li>Notes banana ZARURI hai — baar baar padho</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">2</div>
+      <div class="tl-content">
+        <h4>Phase 2 — Concept Strengthening</h4>
+        <div class="period">Month 3–4 · 60 Days</div>
+        <ul>
+          <li>DI (Data Interpretation) — Aashish Sir ke saath deep dive</li>
+          <li>Advanced Puzzles + Machine Input-Output — Ankush Sir</li>
+          <li>Para Jumbles + Cloze Test + Vocab building</li>
+          <li>Government schemes + RBI policy deep study</li>
+          <li>Weekly Mini Mocks shuru karo (section-wise)</li>
+          <li>Previous year questions solve karna shuru karo</li>
+          <li>Weak topics identify karo aur double time do</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">3</div>
+      <div class="tl-content">
+        <h4>Phase 3 — Speed & Accuracy</h4>
+        <div class="period">Month 5–6 · 60 Days</div>
+        <ul>
+          <li>Full Mock Test roz — analyze karo, improve karo</li>
+          <li>Math mein shortcut + mental math practice</li>
+          <li>Reasoning mein time-bound puzzle solving</li>
+          <li>English mein ek passage daily compulsory</li>
+          <li>Error log maintain karo — same galti dobaara nahi</li>
+          <li>Descriptive writing practice shuru karo (Mains ke liye)</li>
+          <li>Static GK + Banking terms rapid revision</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">4</div>
+      <div class="tl-content">
+        <h4>Phase 4 — Mains Preparation</h4>
+        <div class="period">Month 7–8 · After Prelims</div>
+        <ul>
+          <li>Prelims ke baad ek din rest phir mains schedule shuru</li>
+          <li>Advanced DI + High-level reasoning focus</li>
+          <li>Essay + Letter writing (Descriptive Paper)</li>
+          <li>Economy + Current Affairs — in-depth coverage</li>
+          <li>Mains-level mock tests — full 3 hour attempts</li>
+          <li>Interview preparation (PO ke liye) — begin basic</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">5</div>
+      <div class="tl-content">
+        <h4>Phase 5 — Final Revision & Interview</h4>
+        <div class="period">Last 30 Days + Interview Prep</div>
+        <ul>
+          <li>Poora notes ka rapid revision — ek baar complete sweep</li>
+          <li>Last 5 years ke cut-off dekho — target set karo</li>
+          <li>Mock interview practice — confident speaking</li>
+          <li>Banking current affairs last 6 months</li>
+          <li>Mental fitness — meditation + positive mindset</li>
+          <li>Confidence building — tum tayyar ho! 💪</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- STRATEGY TIPS -->
+<div class="section fade-in">
+  <div class="section-title">⚡ Smart Strategy Tips</div>
+  <div class="section-sub">Topper nahi, smart workers banate hain rank</div>
+  <div class="two-col">
+    <div class="strategy-box">
+      <h4>🎯 Mock Test Strategy</h4>
+      <ul>
+        <li>Attempt order: English → Reasoning → Math (save tough for last)</li>
+        <li>Reasoning mein pehle easy topics karo, phir puzzles</li>
+        <li>Har mock ke baad 45 min analysis compulsory</li>
+        <li>Score nahi, accuracy improve karo pehle</li>
+        <li>Week mein 5 mocks minimum — test series lo</li>
+      </ul>
+    </div>
+    <div class="strategy-box">
+      <h4>📒 Notes & Revision Strategy</h4>
+      <ul>
+        <li>Ek subject ke liye ek notebook — clean notes</li>
+        <li>Formulas + Shortcuts ek alag sheet par</li>
+        <li>Revision 1: Same day evening (5 min recap)</li>
+        <li>Revision 2: Weekly once</li>
+        <li>Revision 3: Monthly full notes read</li>
+      </ul>
+    </div>
+    <div class="strategy-box">
+      <h4>💡 Weak Subject Rescue Plan</h4>
+      <ul>
+        <li>Math mein weak? → Roz 2 topics YouTube se, 25 qs practice</li>
+        <li>English mein weak? → Hindu editorial roz padhna shuru karo</li>
+        <li>Reasoning slow? → Timer lagao — har puzzle mein</li>
+        <li>Banking weak? → Flashcards banao — terms yaad karo</li>
+        <li>Weak ko ignore karo toh cut-off tak nahi pahuncho</li>
+      </ul>
+    </div>
+    <div class="strategy-box">
+      <h4>🏆 Exam Hall Strategy</h4>
+      <ul>
+        <li>Pehle 2 min — poora paper scan karo</li>
+        <li>Easy se shuru karo — confidence build hoga</li>
+        <li>Ek question par 2 min se zyada mat ruko — skip karo</li>
+        <li>Guess mat karo jab tak 60% confident na ho</li>
+        <li>Negative marking ke saath accuracy hi asli scoring hai</li>
+      </ul>
+    </div>
+    <div class="strategy-box">
+      <h4>📱 Best Resources</h4>
+      <ul>
+        <li>Aashish Sir — YouTube: A2Z Math / Unacademy</li>
+        <li>Ankush Sir — YouTube: Reasoning channel</li>
+        <li>Nimisha Ma'am — Adda247 / her channel</li>
+        <li>Dr. Gaurav Garg — YouTube banking channel</li>
+        <li>Khush Sir — Monthly CA compilations</li>
+        <li>Test Series: Oliveboard / Testbook / Adda247</li>
+      </ul>
+    </div>
+    <div class="strategy-box">
+      <h4>🧠 Mental Health Matters</h4>
+      <ul>
+        <li>Comparison mat karo — apna journey apna hai</li>
+        <li>Ek bad mock = experience. Rona band, improve karo.</li>
+        <li>Sunday evening: family/friends ke saath time spend karo</li>
+        <li>Failure se daro mat — IBPS clear karne wale log bhi baar baar baithe hain</li>
+        <li>Khud par trust rakho — yeh exam crack hota hai!</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- MOTIVATIONAL SECTION -->
+<div style="background:linear-gradient(135deg,#0A0E2A,#0F1535,#1a2060);padding:60px 20px;text-align:center;">
+  <div style="max-width:700px;margin:0 auto;">
+    <div style="font-size:40px;margin-bottom:20px;">🔥</div>
+    <p style="font-family:'Playfair Display',serif;font-size:clamp(1.2rem,3vw,1.8rem);color:var(--gold3);line-height:1.5;font-style:italic;margin-bottom:20px;">
+      "Aaj jo fatigue feel ho rahi hai woh kal ki designation banegi.<br>IBPS sirf paper nahi — yeh teri zindagi badalne ka mauka hai."
+    </p>
+    <p style="color:var(--text2);font-size:13px;margin-bottom:32px;">Aashish Sir, Ankush Sir, Nimisha Ma'am, Dr. Gaurav Garg, Khush Sir — yeh sab tumhari team hai.<br>Tum akele nahi ho. Bas roz 10 ghante do. Ek din zaroor aayega 🏦</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;">
+      <div style="background:rgba(245,200,66,0.08);border:1px solid var(--border);border-radius:12px;padding:16px 24px;font-family:'Rajdhani',sans-serif;">
+        <div style="font-size:1.6rem;font-weight:700;color:var(--gold);">Day 1</div>
+        <div style="font-size:12px;color:var(--text2);">Start karo aaj se</div>
+      </div>
+      <div style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);border-radius:12px;padding:16px 24px;font-family:'Rajdhani',sans-serif;">
+        <div style="font-size:1.6rem;font-weight:700;color:#34D399;">Day 180</div>
+        <div style="font-size:12px;color:var(--text2);">Prelims result</div>
+      </div>
+      <div style="background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);border-radius:12px;padding:16px 24px;font-family:'Rajdhani',sans-serif;">
+        <div style="font-size:1.6rem;font-weight:700;color:#60A5FA;">Day 300</div>
+        <div style="font-size:12px;color:var(--text2);">Officer ban rahe ho</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="quote">"रुको मत, गिरो मत — Bank Officer बनना है।"</div>
+  <p>IBPS PO & Clerk 2025-26 · Complete Preparation Roadmap</p>
+  <p style="margin-top:8px;font-size:11px;">Aashish Sir · Ankush Sir · Nimisha Ma'am · Dr. Gaurav Garg · Khush Sir — Your Dream Team 🏦</p>
+  <p style="margin-top:12px;color:rgba(255,255,255,0.2);font-size:11px;">Designed for serious aspirants who give their 100% every single day.</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
